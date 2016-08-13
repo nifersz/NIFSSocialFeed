@@ -1,0 +1,21 @@
+<resources>
+
+    <string name="app_name">NIFS Social Feed</string>
+    <string name="socialfeed">Social Feed</string>
+    <string name="welcome">Bienvenido</string>
+
+    <string name="navigation_drawer_open">Abrir menú de navegación</string>
+    <string name="navigation_drawer_close">Cerrar menú de navegación</string>
+
+    <!-- Instagram -->
+    <string name="my_pictures">Mis Fotos</string>
+    <string name="my_profile">Mi Perfil</string>
+    <string name="posts">POSTS</string>
+    <string name="followers">SEGUIDORES</string>
+    <string name="following">SIGUIENDO</string>
+
+    <!-- Twitter -->
+    <string name="retweets">Retweets</string>
+    <string name="favorites">Favoritos</string>
+
+</resources>

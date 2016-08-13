@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtv_instagram_logout"
+        android:text="Instagram"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/instagram" />
+
+    <Button
+        android:id="@+id/btn_instagram_logout"
+        android:text="LOGOUT"
+        android:enabled="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+    <TextView
+        android:id="@+id/txtv_twitter_logout"
+        android:text="Twitter"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/twitter"
+        android:layout_below="@+id/btn_instagram_logout" />
+
+    <Button
+        android:id="@+id/btn_twitter_logout"
+        android:text="LOGOUT"
+        android:enabled="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/btn_instagram_logout"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+</RelativeLayout>

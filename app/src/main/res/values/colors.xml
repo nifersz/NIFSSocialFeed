@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAccent">#03A9F4</color>
+    <color name="panelBackground">#F5F5F5</color>
+
+    <color name="instagram">#125688</color>
+    <color name="twitter">#4099FF</color>
+
+    <color name="divider">#bababa</color>
+    <color name="disabled">#aaaaaa</color>
+
+</resources>

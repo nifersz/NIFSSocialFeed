@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    style="@style/TweetCard"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/card_tweet">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/text_tweet_username"
+            android:text="Sami Duran"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/text_tweet_userid"
+            android:text="\@SamiDuran11"
+            android:textSize="19sp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/twitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text_tweet_username" />
+
+        <TextView
+            android:id="@+id/text_tweet_content"
+            android:text="Excelente contenido compartido en un espacio reducido de caracteres."
+            android:textSize="14sp"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_tweet_userid" />
+
+        <LinearLayout
+            android:id="@+id/layout_tweet_extra_one"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_tweet_content">
+
+            <TextView
+                android:id="@+id/text_retweets_number"
+                android:text="15"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/text_tweet_favs_number"
+                android:text="0"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_tweet_extra_two"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_tweet_extra_one">
+
+            <TextView
+                android:id="@+id/text_retweets_number_label"
+                android:text="@string/retweets"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:id="@+id/text_tweet_favs_number_label"
+                android:text="@string/favorites"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

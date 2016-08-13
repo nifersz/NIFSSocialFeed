@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark"
+                tools:context=".ui.fragment.SplashFragment">
+
+    <TextView
+        android:id="@+id/txtv_splash_sfa"
+        android:text="Social Feed App"
+        android:textSize="32sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/txtv_splash_for" />
+
+    <TextView
+        android:id="@+id/txtv_splash_for"
+        android:textSize="22sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/txtv_splash_kogi" />
+
+    <TextView
+        android:id="@+id/txtv_splash_kogi"
+        android:text="Kogi"
+        android:textSize="60sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/txtv_splash_by"
+        android:text="NIFS"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/txtv_splash_kogi" />
+
+</RelativeLayout>

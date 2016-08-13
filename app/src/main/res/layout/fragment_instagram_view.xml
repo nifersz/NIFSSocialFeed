@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                tools:context=".ui.activity.MainActivity"
+                android:id="@+id/layt_instagram_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/panelBackground">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager_instagram"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_instagram_separator"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <View
+        android:id="@+id/view_instagram_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_above="@+id/layt_instagram_view_buttons" />
+
+    <LinearLayout
+        android:id="@+id/layt_instagram_view_buttons"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/button_instagram_mypictures"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textAllCaps="false"
+            android:text="@string/my_pictures"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:textColor="@color/colorPrimary"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/divider" />
+
+        <Button
+            android:id="@+id/button_instagram_myprofile"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textAllCaps="false"
+            android:text="@string/my_profile"
+            android:textColor="@color/disabled"
+            android:layout_gravity="end|center"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless" />
+
+    </LinearLayout>
+
+</RelativeLayout>
